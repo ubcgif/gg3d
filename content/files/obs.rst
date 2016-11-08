@@ -3,7 +3,7 @@
 Observations file
 =================
 
-This file is used to specify the observed gravity anomalies with estimated standard deviation. The output of the forward modelling program GZFOR3D has the same structure except that the column of standard deviations for the error is omitted. Lines starting with ! are comments. The following is the GIF-formatted file structure of a gravity observations file:
+This file is used to specify the observed gravity anomalies with estimated standard deviation. The output of the forward modelling program GGFOR3D has the same structure except that the column of standard deviations for the error is omitted. Lines starting with ! are comments. The following is the GIF-formatted file structure of a gravity observations file:
 
 .. figure:: ../../images/ggObs.png
     :align: center
