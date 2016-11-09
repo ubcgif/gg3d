@@ -26,7 +26,7 @@ Input files can be any file name. If there are spaces in the path or file name, 
 
 #. ``ref``: Optional reference :ref:`model file <modelFile>`. This can be substituted by a value within the input file (see below).
 
-#. ``active``: Optional ref:`active model file <activeFile>`
+#. ``active``: Optional :ref:`active model file <activeFile>`
 
 #. ``upperBound``: Optional upper bounds :ref:`model file <modelFile>`. A value can be used to set a global bound (see below).
 
