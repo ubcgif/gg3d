@@ -33,13 +33,14 @@ sys.path.append(os.path.abspath('./_ext'))
 # ones.
 extensions = [
     'sphinx.ext.mathjax',
+    'sphinxcontrib.bibtex',
     'edit_on_github',
-    'purpose',
-    'example',
 ]
 
+bibtex_bibfiles = ['reference.bib']
+
 # Number figures
-numfig = True
+numfig = False
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

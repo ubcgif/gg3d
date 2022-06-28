@@ -12,12 +12,12 @@ This file is used to specify the observed gravity anomalies with estimated stand
 Parameter definitions:
 
 - comp: Flag must start with ``datacomp=`` and then can be set with the following possible flags (followed by comma or space):
-    - ``xx`` the :math:`g_{xx}` component (x+ north)
-    - ``xy`` the :math:`g_{xy}` component (x+ north; y+ east)
-    - ``xz`` the :math:`g_{yz}` component (x+ north; y+ east)
-    - ``yy`` the :math:`g_{yy}` component (y+ east)
-    - ``yz`` the :math:`g_{yz}` component (y+ east; z+ down)
-    - ``zz`` the :math:`g_{zz}` component (z+ down)
+    - ``xx`` the :math:`g_{xx}` component (x +ve north)
+    - ``xy`` the :math:`g_{xy}` component (x +ve north; y +ve east)
+    - ``xz`` the :math:`g_{xz}` component (x +ve north; z +ve down)
+    - ``yy`` the :math:`g_{yy}` component (y +ve east)
+    - ``yz`` the :math:`g_{yz}` component (y +ve east; z +ve down)
+    - ``zz`` the :math:`g_{zz}` component (z +ve down)
     - ``ne`` the :math:`G_{ne}` component for Falcon data
     - ``uv`` the :math:`G_{uv}` component for Falcon data
     - ``ka`` the along-line component for VK1 data (must give sensor heading)

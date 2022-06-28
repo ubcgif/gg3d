@@ -1,31 +1,33 @@
-.. _ggfor3d:
+.. _gg3d_fwd:
 
-GGFOR3D
-=======
+Forward Modeling
+================
 
-This program performs forward modelling. Command line usage:
+The program **ggfor3d.exe** performs the 3D forward modelling of gravity gradiometry data for a density contrast model defined on a tensor mesh.
 
-``ggfor3d mesh.msh obs.loc model.den [topo.dat]``
+Running the Program
+^^^^^^^^^^^^^^^^^^^
 
-and will create the forward modelled data file ``ggfor3d.gg``. 
+To run the executable, open a command window. In order, enter the path to the *ggfor3d* executable, the :ref:`tensor mesh file <meshfile>`, the :ref:`survey file <ggfile>`, the :ref:`density contrast model file <modelfile>` and a :ref:`topography file <topofile>` (optional). This in shown below.
 
-**NOTE**: The program will ignore values less than -90 g/cc in the model file. Therefore, files with values of -100 (the flag for above topography) from the inversion code will not contribute to the forward modelling.
+.. figure:: images/run_fwd.PNG
+     :align: center
+     :width: 700
 
-Input files
------------
 
-All files are in ASCII text format - they can be read with any text editor. Input files can have any name the user specifies. Details for the format of each file can be found in Section [Elements]. The files associated with are:
+Units
+^^^^^
 
-- ``mesh.msh``: The 3D :ref:`mesh <meshfile>`.
+    - **Data:** gravity gradiometry in Eotvos
+    - **Model:** density contrast model in g/cc
 
-- ``obs.loc``: The observation :ref:`locations <ggfile>`.
 
-- ``model.den``: The density contrast :ref:`model <modelfile>` in g/cc.
+Output Files
+^^^^^^^^^^^^
 
-- ``topo.dat``: Surface :ref:`topography <topofile>` (optional). If omitted, the surface will be treated as being flat and the top of the 3D mesh.
+The program **ggfor3d.exe** creates the following output files:
 
-Output file
------------
+    - **ggfor3d.gg:** Predicted data file.
 
-The created file is ``ggfor3d.gg``. The file format is that of the :ref:`data file <ggfile>` without the associated standard deviations. The forward modelled data are in **Eotvos**.
+    - **ggfor3d.log:** Log file which provides details about the parameters used in the forward modelling and diagnostic information about the results.
 

@@ -3,23 +3,20 @@
 GGPRE3D
 =======
 
-This utility multiplies a model by the stored sensitivity matrix (all components) to produce predicted data. This program is included so that users who are not familiar with the wavelet transform and the structure of could utilize the available sensitivity matrix to carry out modelling exercises. The command line usage is:
+This utility multiplies a model by the stored sensitivity matrix in to produce predicted data. This program is included so that users who are not familiar with the wavelet transform and the structure of could utilize the available sensitivity matrix to carry out modelling exercises.
 
-``ggpre3d gginv3d.mtx obs.loc model.den``
+Running the Program
+^^^^^^^^^^^^^^^^^^^
 
-Input files
------------
-
-#. ``gginv3d.mtx``: The sensitivity matrix file create from :ref:`ggsen3d`.
-
-#. ``obs.loc``: The gradiometry :ref:`location file <ggLocFile>`.
-
-#. ``model.den``: The density contrast :ref:`model file <modelFile>`.
+To run the executable, open a command window. In order, enter the path to the *ggpre3d* executable, the path to the sensitivity matrix file (*gginv3d.mtx*), the path to the :ref:`survey file <ggfile>` and the path to the :ref:`density contrast model file <modelfile>`. This in shown below.
 
 
-Output file
------------
+.. figure:: images/run_pre.PNG
+     :align: center
+     :width: 700
 
-The output file is a :ref:`predicted data file <ggPreFile>` (omitting uncertainty column) and is named ``ggpre3d.gg``. This program can be used to reproduce output predicted files from :ref:`gginv3d`.
 
+Output Files
+^^^^^^^^^^^^
 
+The output file is a :ref:`predicted data file <ggFile>` (omitting uncertainty column) and is named ``ggpre3d.gg``. This program can be used to reproduce output predicted files from :ref:`gg3d_fwd`.
