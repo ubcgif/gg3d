@@ -49,8 +49,8 @@ Here, we describe the formats of supplementary files used to run GG3D v6.0.
     :maxdepth: 1
 
     Mesh <files/meshfile>
+    Model <files/model>
     Topography <files/topo>
     Observation/Location <files/obs>
-    Models <files/modelfile>
     Weighting <files/weight>
 
