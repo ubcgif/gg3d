@@ -3,6 +3,6 @@ dobs.gg              ! data file
 null                 ! topography
 distance_weight.txt  ! pf weights file name
 daub2                ! wavelet: daubx, symmx, NONE
-1  0.05              ! itol, eps | null
+1  0.004             ! itol, eps | null
 0                    ! 0-not output, 1-output diagnostic files
 0                    ! 0-scale MOF,  1-scale sens (optional)

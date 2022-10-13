@@ -1,7 +1,7 @@
 .. _example:
 
 
-.. note:: A new example has been developed for demonstrating functionality specific to v6.0. The example can be completed using v5.0, however some functionality may not exist in v5.0 and the format of certain input files may differ slightly.
+.. note:: A new example has been developed for demonstrating functionality specific to v6.0/v6.0.1. The example can be completed using v5.0, however some functionality may not exist in v5.0 and the format of certain input files may differ slightly.
 
 Examples
 ========
@@ -11,7 +11,7 @@ Examples
 ..      :width: 700
 
 
-Here, the program libraries for GG3D v6.0 will be used to:
+Here, the program libraries for GG3D v6.0/v6.0.1 will be used to:
 
     - define a density contrast model on a tensor mesh
     - predict gravity gradiometry data for a synthetic density contrast model

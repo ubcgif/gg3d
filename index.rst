@@ -1,15 +1,15 @@
-.. GG3D documentation master file
+.. important:: In 2022-10, a more exact definition of the regularization was implemented in **gginv3d.exe** for sparse-norm inversion. The package containing the improved executable was released as **GG3D v6.0.1**. Be aware that GG3D v6.0 and v6.0.1 have all the same features and use the same executable names. Differences in the recovered model using each package were found to be insignificant.
 
-GG3D v6.0 Package
-=================
+GG3D v6.0/v6.0.1 Package
+========================
 
-GG3D v6.0 is a program library for carrying out forward modelling and inversion of surface, borehole, and airborne gravity gradiometry data in 3D.
+GG3D v6.0/v6.0.1 is a program library for carrying out forward modelling and inversion of surface, borehole, and airborne gravity gradiometry data in 3D.
 
 
-Highlights of GG3D v6.0
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Highlights of GG3D v6.0/v6.0.1
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Many advancements have been made since the previous version of this coding package. Highlights of GG3D v6.0 include:
+Many advancements have been made since the previous version of this coding package. Highlights of GG3D v6.0/v6.0.1 include:
 
 
     - the ability to forward model and invert surface, borehole, and airborne gravity gradiometry data in 3D

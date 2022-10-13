@@ -1,9 +1,11 @@
 .. _elements:
 
-Elements of the GG3D v6.0 Package
-=================================
+.. important:: In 2022-10, a more exact definition of the regularization was implemented in **gginv3d.exe** for sparse-norm inversion. The package containing the improved executable was released as **GG3D v6.0.1**. Be aware that GG3D v6.0 and v6.0.1 have all the same features and use the same executable names. Differences in the recovered model using each package were found to be insignificant.
 
-This section provides a brief description of each program in the GG3D v6.0 library. In addition, we describe the file formats for all input and supporting files used by the coding library.
+Elements of the GG3D v6.0/v6.0.1 Package
+========================================
+
+This section provides a brief description of each program in the GG3D v6.0/v6.0.1 library. In addition, we describe the file formats for all input and supporting files used by the coding library.
 
 Introduction
 ------------
@@ -28,7 +30,7 @@ Utility codes relevant to this package include:
 Main Input Files
 ----------------
 
-Here, we describe the main input files for executables contained with the GG3D v6.0 coding package.
+Here, we describe the main input files for executables contained with the GG3D v6.0/v6.0.1 coding package.
 
 .. toctree::
     :maxdepth: 1
@@ -43,7 +45,7 @@ Here, we describe the main input files for executables contained with the GG3D v
 General files for GG3D programs
 ---------------------------------
 
-Here, we describe the formats of supplementary files used to run GG3D v6.0.
+Here, we describe the formats of supplementary files used to run GG3D v6.0/v6.0.1.
 
 .. toctree::
     :maxdepth: 1
