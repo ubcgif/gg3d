@@ -1,9 +1,38 @@
 .. _overview:
 
-.. important:: In 2022-10, a more exact definition of the regularization was implemented in **gginv3d.exe** for sparse-norm inversion. The package containing the improved executable was released as **GG3D v6.0.1**. Be aware that GG3D v6.0 and v6.0.1 have all the same features and use the same executable names. Differences in the recovered model using each package were found to be insignificant.
+.. important:: The features and executable names within the GG3D the v6.0, v6.0.1 and v6.0.2 packages remain the same. Differences in version number correspond to improvements in performance.
 
-GG3D package overview
-=======================
+GG3D v6 Package Overview
+========================
+
+Highlights
+----------
+
+**General GG3D Package Highlights:**
+
+    - the ability to forward model and invert surface, borehole, and airborne gravity gradiometry data in 3D
+    - the data can be full-tensor gradiometer (FTG) or the raw components of the Falcon or VK1 systems
+    - distance weighting so that targets recovered through inversion are placed at the correct depth
+    - implementing wavelet compression to reduce the storage cost of the sensitivity matrix and allow the user to solve larger problems
+
+
+**v6.0 Highlights:**
+
+    - the ability to forward model and invert both total magnetic intensity and amplitude data
+    - the ability to recover compact and/or blocky models using sparse norms, in additional to smooth models using a standard least-squares approach
+
+
+**v6.0.1 Highlights:**
+
+    - implementation of a more exact definition for the regularization
+
+
+**v6.0.2 Highlights:**
+
+    - general sensitivities that can be used for least-squares or sparse-norm inversion
+    - improved wavelet compression which acts on weighted sensitivities
+    - update preconditionner during IRLS iterations to reduce number of conjugate gradient solves
+
 
 Description
 -----------
@@ -44,13 +73,22 @@ Program library content
 Executable programs
 ^^^^^^^^^^^^^^^^^^^
 
-This package consists of five major programs:
+The program library consists of the programs:
 
-   - PFWEIGHT: calculates the depth/distance weighting function
-   - GGFOR3D: performs forward modelling
-   - GGSEN3D: calculates the sensitivity matrices
-   - GGPRE3D: multiplies the sensitivity file by the model to get the predicted data
-   - GGINV3D: performs 3D gravity gradiometry inversion
+    - **ggfor3d.exe**: A code for forward modeling gravity gradiometry data from a density contrast model model.
+
+    - **ggsen3d.exe**: calculates the sensitivity matrix for the inversion and outputs sensitivity weights.
+
+    - **gginv3d.exe**: performs 3D inversion of gravity gradiometry data to recover a density contrast model.
+
+    - **ggpre3d.exe**: multiplies the sensitivity file by the model to get the predicted data. This rarely used utility multiplies a model by the sensitivity matrix in to produce the predicted data. This program is included so that users who are not familiar with the wavelet transform and the structure of can utilize the available sensitivity matrix to carry out model studies.
+
+Utility codes relevant to this package include:
+
+   - **blk3cell.exe:** A utility for generating block models on tensor meshes
+
+   - **pfweight_60.exe:** A utility for computing depth or distance weighting for potential field inversion
+
 
 Graphical user interfaces
 ^^^^^^^^^^^^^^^^^^^^^^^^^
