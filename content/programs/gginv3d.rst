@@ -36,7 +36,7 @@ The program **gginv3d.exe** creates the following output files:
 
     - **gginv3d_xxx.den**: Density constrast :ref:`model files <modelFile>` output after each "xxx" iteration (i.e., **gzinv3d_012.den**)
 
-    - **gginv3d_xxx.pre**: :ref:`Predicted data files <gravFile>` (without uncertainties) output after each "xxx" iteration.
+    - **gginv3d_xxx.pre**: :ref:`Predicted data files <ggfile>` (without uncertainties) output after each "xxx" iteration.
 
 
 

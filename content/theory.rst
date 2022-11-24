@@ -87,7 +87,7 @@ In the previous two equations, the individual matrices :math:`\mathbf{W}_s`, :ma
 
 In addition, more realistic geologic-looking models can often be obtained by introducing various levels of sharpness and compactness into the inverted results. This is accomplished by using different norms in the model objective function. Minimizing an :math:`l_p`-norm of a model, as :math:`p` reduces from two to zero, generates a result that goes from smooth to blocky to compact. Our generalized norms, which we refer to as :math:`l_p, l_q`, allow various degrees of smoothness and compactness on different components of the model objective function:
 
-.. _lplqMOF_:
+.. _lplqMOF:
 .. math::
     \phi_m(\mathbf{\rho}) = \left \| \mathbf{W}_s(\mathbf{\rho}-\mathbf{\rho}_o)\right \|^p + \left \| \mathbf{W}_i(\mathbf{\rho})\right \|^{q_i} \quad (i=x,y,z)
     :label: moflplq
@@ -178,5 +178,5 @@ Here the numerator is the norm of the discarded coefficients and the denominator
      \delta_i = \epsilon \underset{j}{\max}\left | {\widetilde{g}_{ij}} \right|, ~~i=1,\ldots,N.
      :label: deltai
 
-The program that implements this compression procedure is :ref:`ggsen3d`. The user is asked to specify the relative error :math:`r^*` and the program will determine the relative threshold level :math:`\delta_i`. Usually a value of a few percent is appropriate for :math:`r^*`. When both surface and borehole data are present, two different relative threshold levels are calculated by choosing a representative row for surface data and another for borehole data. For experienced users and ones that are re-inverting the data, the program also allows the direct input of the relative threshold level.
+The program that implements this compression procedure is :ref:`gg3d_sens`. The user is asked to specify the relative error :math:`r^*` and the program will determine the relative threshold level :math:`\delta_i`. Usually a value of a few percent is appropriate for :math:`r^*`. When both surface and borehole data are present, two different relative threshold levels are calculated by choosing a representative row for surface data and another for borehole data. For experienced users and ones that are re-inverting the data, the program also allows the direct input of the relative threshold level.
 
