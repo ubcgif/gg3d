@@ -1,7 +1,6 @@
 .. _example:
 
-
-.. note:: A new example has been developed for demonstrating GG3D v6.0.2. The example can be completed using previous versions. However some functionality has been added since v5.0, and improvements in performance since v6.0 and v6.0.1 may result in slightly different recovered models.
+.. note:: The latest example has been generated using GG3D v6.0.2. The exercise can be completed using previous versions. However some functionality has been added since v5.0, and improvements in performance since v6.0 and v6.0.1 may result in slightly different recovered models.
 
 Examples
 ========
@@ -11,7 +10,7 @@ Examples
 ..      :width: 700
 
 
-Here, the program libraries for GG3D v6.0.2 will be used to:
+Here, the program libraries for GG3D v6 will be used to:
 
     - define a density contrast model on a tensor mesh
     - predict gravity gradiometry data for a synthetic density contrast model
@@ -32,6 +31,6 @@ The full example is parsed into 5 sections:
 
     Create tensor model <example/create_model>
     Forward modeling <example/fwd>
-    Weights <example/weights>
+    Depth/distance weighting <example/weights>
     Least-squares inversion <example/inv_L2>
     Sparse norm inversion <example/inv_sparse>
