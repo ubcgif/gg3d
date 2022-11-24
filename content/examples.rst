@@ -5,9 +5,9 @@
 Examples
 ========
 
-.. .. figure:: example/images/model_sparse.png
-..      :align: center
-..      :width: 700
+.. figure:: example/images/model_sparse.png
+     :align: center
+     :width: 700
 
 
 Here, the program libraries for GG3D v6 will be used to:
