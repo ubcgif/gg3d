@@ -94,7 +94,7 @@ Graphical user interfaces
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 GUI-based utilities for these codes only include model viewing. It is only available on Windows platforms and can be freely downloaded through the UBC-GIF website:
 
-   - `MeshTools3D <http://www.eos.ubc.ca/~rshekhtm/utilities/MeshTools3d.zip>`__: a utility for displaying resulting 3D models as volume renderings. Density contrast volumes can be sliced in any direction, or isosurface renderings can be generated.
+   - **MeshTools3D** (`x64 <https://owncloud.eoas.ubc.ca/s/WnqcWWRKSTrGtfY/download>`__ , `x86 <https://owncloud.eoas.ubc.ca/s/YTFde2gALsiN4Si/download>`__ ): a utility for displaying resulting 3D models as volume renderings. Susceptibility volumes can be sliced in any direction, or isosurface renderings can be generated.
 
 Licensing
 ---------
