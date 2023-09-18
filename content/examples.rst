@@ -12,11 +12,15 @@ Examples
 
 Here, the program libraries for GG3D v6 will be used to:
 
-    - define a density contrast model on a tensor mesh
-    - predict gravity gradiometry data for a synthetic density contrast model
-    - generate sensitivity weights for the inverse problem
-    - compute and store the sensitivity matrix
-    - invert gravity graviometry data to recover a density contrast model
+   -  define a density contrast model on a tensor mesh
+
+   -  predict gravity gradiometry data for a synthetic density contrast model
+
+   -  generate sensitivity weights for the inverse problem
+
+   -  compute and store the sensitivity matrix
+   
+   -  invert gravity graviometry data to recover a density contrast model
 
 
 Zip folders containing all necessary files can be downloaded here:
